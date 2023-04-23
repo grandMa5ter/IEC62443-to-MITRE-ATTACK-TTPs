@@ -39,8 +39,6 @@ def process_controls(df, devices):
     # Add new columns to store generated results
     df['Tactics'] = ''
     df['Techniques'] = ''
-    for device in devices:
-        df[f'V&V Instructions ({device})'] = ''
 
     for index, row in df.iterrows():
         clause = row['Clause']
